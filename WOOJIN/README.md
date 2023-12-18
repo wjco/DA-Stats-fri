@@ -1,20 +1,14 @@
-# DAStatsStudy-fri
-- 장소: 왕십리역 (<a href='https://sdyv.org/'>성동구 청년지원센터</a>)
-- 일시: 매주 금요일 오후 7시
-- 인원: 4명 (WOOJIN @____ @____ @____)
-- Notion: https://www.notion.so/DAStatsStudy-fri-256776668a48467ebf5822801d1bbb9a
-- KakaoTalk: https://open.kakao.com/o/g6EHCsQf
-
-<br>
-
-## Commit Convention
-커밋 메세지 양식입니다.
-
-<b>1. 진행한 결과물을 업로드할 때</b><br>
-Project: YYMMDD UserName<br>
-→ <i>ex) Project: 231110 WOOJIN</i>
-
-<b>2. 파일 일부, 경로 등을 수정할 때</b><br>
-Update: YYMMDD UserName<br>
-→ <i>ex) Update: 231110 WOOJIN</i><br>
-→ <i>ex) Update: 231110 WOOJIN (2)</i><br>
+### 배달 산업 분석과 마케팅 방향성 모색
+- 설명: 2021년 배달 주문 건수 데이터를 통해 업황을 확인하고, 배달업계의 마케팅 추진 방향성을 모색
+- 데이터셋
+    - [업종 목적지별 배달 주문건수](https://bdp.kt.co.kr/invoke/SOKBP2603/?goodsCode=KGUDSTNORDER)(통신 빅데이터 플랫폼)
+- 진행 절차 및 내용
+    - 데이터 로딩, 결측치 처리 및 파생 변수 생성, 컬럼별 분포 확인 및 **시각화** 진행
+    - 시간대 단위로 **K-Means Clustering** 수행하여 주문량 많은 군집 선정
+    - 주문량 많은 군집에서 가장 주문량이 많은 메뉴를 확인하기 위해 **등분산 검정과 t-test** 수행
+    - 분석 결과로부터, 매일 오후 6시에 할인 쿠폰을 발급하는 게릴라성 앱 푸시 이벤트 기획
+- 사용한 스킬셋
+    - pandas
+    - matplotlib, seaborn
+    - scikit-learn
+    - scipy
